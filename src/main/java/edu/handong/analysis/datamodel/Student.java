@@ -31,12 +31,9 @@ public class Student {
         for(Map.Entry<String, Integer> tempEntry: entries){
         	if(!semestersByYearAndSemester.containsKey(tempEntry.getKey()))
         	semestersByYearAndSemester.put(tempEntry.getKey(),i);
-        	i++; //key가 존재하지 않으면 ****************으로 조건 추
+        	i++; 
         }
-        //System.out.println(semestersByYearAndSemester.size());
-        /*for(Map.Entry<String, Integer> tempEntry: entries){
-            System.out.println(tempEntry.getKey() + " = " + tempEntry.getValue());
-        }*/
+
 		return semestersByYearAndSemester;
 	}
 	public int getNumCourseInNthSemester(int semester)

@@ -41,11 +41,7 @@ public class HGUCoursePatternAnalyzer {
 		
 		// Generate result lines to be saved.
 		ArrayList<String> linesToBeSaved = countNumberOfCoursesTakenInEachSemester(sortedStudents);
-	/*
-	System.out.println("num : " + sortedStudents.get("0001").getNumCourseInNthSemester(1));
-	System.out.println("num : " + sortedStudents.get("0001").getNumCourseInNthSemester(2));
-	System.out.println("num : " + sortedStudents.get("0001").getNumCourseInNthSemester(3));
-	System.out.println("num : " + sortedStudents.get("0001").getNumCourseInNthSemester(4));*/
+
 		// Write a file (named like the value of resultPath) with linesTobeSaved.
 		Utils.writeAFile(linesToBeSaved, resultPath);
 	}
@@ -74,19 +70,8 @@ public class HGUCoursePatternAnalyzer {
 				stu.addCourse(cs);
 			}
 		}
-		/*
-		Set<String> keys = hashmap.keySet();
-		//print all the keys
-		for (String key : keys) {
-			Student stu = hashmap.get(key);
-			//System.out.println(stu.getStudentId());
-			HashMap<String,Integer> hm = stu.getSemestersByYearAndSemester();
-			for(Map.Entry<String,Integer> element : hm.entrySet()){
-	            System.out.println("key : "+element.getKey()+" ,value : "+element.getValue());
-			}
-		}*/
+
 		//한줄씩 받음 -> course class 만들기 -> hashmap에 key 있는지 확인 -> 없으면 student생성하 추가하고 addcourse , 있으면 그냥 addcourse
-		// TODO: Implement this method
 		
 		return hashmap; // do not forget to return a proper variable.
 	}

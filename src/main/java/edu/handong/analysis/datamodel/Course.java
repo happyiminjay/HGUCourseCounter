@@ -24,8 +24,6 @@ public class Course {
 		courseCredit = strlist[6].trim();
 		yearTaken = Integer.parseInt(strlist[7].trim());
 		semesterCourseTaken = Integer.parseInt(strlist[8].trim());
-		/*System.out.println(studentId+" "+yearMonthGraduated+" "+firstMajor+" "+secondMajor+" "+courseCode+" "+courseName
-				+" "+courseCredit+" "+yearTaken+" "+semesterCourseTaken);*/
 	}
 
 	public String getTimeCourseTaken() {
