@@ -18,6 +18,12 @@ public class Student {
 	{
 		coursesTaken.add(newRecord);
 	}
+	
+	public ArrayList<Course> getCourseTaken()
+	{
+		return coursesTaken;
+	}
+	
 	public HashMap<String,Integer> getSemestersByYearAndSemester()
 	{
 		TreeMap<String,Integer> treemap = new TreeMap<>();
